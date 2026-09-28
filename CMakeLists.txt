@@ -24,7 +24,9 @@ find_package(Qt6 ${QT_MIN_VERSION} REQUIRED COMPONENTS Core DBus Qml Widgets)
 find_package(KF6 ${KF6_MIN_VERSION} REQUIRED COMPONENTS I18n Service WindowSystem)
 find_package(Plasma ${KF6_MIN_VERSION} REQUIRED)
 find_package(PlasmaActivities ${KF6_MIN_VERSION} REQUIRED)
-find_package(KWin REQUIRED)
+# NOTE: KWin is only accessed over D-Bus (see plugin/KWinDesktop.h), so no
+# KWin development files are required. KWin does not ship a CMake package
+# config, so find_package(KWin) would fail on most distributions.
 
 add_subdirectory(plugin)
 plasma_install_package(package org.kde.plasma.virtualdesktopbar)

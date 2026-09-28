@@ -23,7 +23,6 @@ target_link_libraries(virtualdesktopbar
         KF6::I18n
         KF6::Service
         KF6::WindowSystem
-        KWin::kwin
         Plasma::Plasma
         Plasma::Activities
 )

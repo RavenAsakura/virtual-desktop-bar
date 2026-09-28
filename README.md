@@ -95,9 +95,43 @@ After installation, add the widget to a panel or desktop via Plasma's widget pic
 
 ### Manual Installation
 
+#### Ubuntu / Debian
+
+Tested on **Ubuntu 26.04 LTS (KDE Plasma 6)**.
+
+Install the build dependencies first:
+
+    sudo apt install \
+        build-essential cmake extra-cmake-modules \
+        qt6-base-dev qt6-declarative-dev \
+        libkf6i18n-dev libkf6service-dev libkf6windowsystem-dev \
+        libplasma-dev libplasmaactivities-dev
+
+No KWin development package is needed: the widget talks to KWin over D-Bus only.
+
 Clone the repository:
 
-    git clone https://github.com/lenonk/virtual-desktop-bar.git
+    git clone https://github.com/RavenAsakura/virtual-desktop-bar.git
+    cd virtual-desktop-bar
+
+Build and install:
+
+    cmake -B build
+    cmake --build build
+    sudo cmake --install build
+
+Add `-DCMAKE_BUILD_TYPE=Release` to the `cmake` command for a smaller, faster binary.
+Without it, KDE's CMake settings default to a debug build.
+
+Restart plasmashell or re-login if the widget does not appear immediately:
+
+    plasmashell --replace
+
+#### Other Distributions
+
+Clone the repository:
+
+    git clone https://github.com/RavenAsakura/virtual-desktop-bar.git
     cd virtual-desktop-bar
 
 Build and install:

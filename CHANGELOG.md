@@ -4,6 +4,11 @@
 
 ### Changes
 
+* Fixed build on Ubuntu 26.04 (KDE Plasma 6) and other distributions by dropping
+  the unused KWin development dependency. KWin does not ship a CMake package
+  config, and the widget only accesses it over D-Bus, so `find_package(KWin)` made
+  the build fail even though nothing from KWin was linked or included.
+* Documented the build dependencies and installation steps for Ubuntu / Debian
 * Added an option to specify the thickness of lines used as indicators
 * Fixed broken window detection (e.g. Steam or Spotify were affected by this)
 * Fixed an issue of not being able to select the Number style under certain conditions
