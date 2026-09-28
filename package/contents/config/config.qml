@@ -1,6 +1,5 @@
 import QtQuick
 import org.kde.plasma.configuration as PlasmaConfig
-// import org.kde.kirigami 2.20 as Kirigami
 
 PlasmaConfig.ConfigModel {
     PlasmaConfig.ConfigCategory {

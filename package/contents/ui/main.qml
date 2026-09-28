@@ -4,7 +4,7 @@ import QtQuick.Window
 import org.kde.plasma.plasmoid
 import org.kde.plasma.core as PlasmaCore
 import org.kde.plasma.components as PlasmaComponents3
-import org.kde.kirigami 2.2 as Kirigami
+import org.kde.kirigami as Kirigami
 
 import "common" as Common
 

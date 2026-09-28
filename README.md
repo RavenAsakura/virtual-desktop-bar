@@ -160,6 +160,10 @@ This widget is designed and tested for:
 - Wayland sessions
 
 Wayland is required.
+Building requires CMake 3.27 or newer and Qt 6.6 or newer; the build also
+requires KDE Frameworks 6, Plasma, and Plasma Activities development files.
+The current build was verified with Qt 6.10.2, KDE Frameworks 6.24, and Plasma 6.6
+on Ubuntu 26.04.
 
 ---
 
@@ -199,4 +203,3 @@ This project builds upon earlier virtual desktop bar efforts within the KDE comm
 ## Support
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/K3K51TO6S1)
-

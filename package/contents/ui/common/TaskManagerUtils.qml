@@ -37,7 +37,7 @@ QtObject {
             const isActive = tasksModel.data(taskIndex, TaskManager.AbstractTasksModel.IsActive);
 
             if (isActive) {
-                const displayName = tasksModel.data(taskIndex, TaskManager.AbstractTasksModel.DisplayRole) || "";
+                const displayName = tasksModel.data(taskIndex, Qt.DisplayRole) || "";
                 activeWindowCache[desktopUuid] = displayName;
                 return displayName;
             }

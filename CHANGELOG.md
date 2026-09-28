@@ -4,6 +4,9 @@
 
 ### Changes
 
+* Aligned the Qt minimum with Plasma 6's Qt 6.6 requirement.
+* Removed legacy Plasma 5 metadata and versioned Kirigami imports from the Plasma 6 widget.
+* Fixed active window labels by reading Qt's display role from the Task Manager model.
 * Fixed build on Ubuntu 26.04 (KDE Plasma 6) and other distributions by dropping
   the unused KWin development dependency. KWin does not ship a CMake package
   config, and the widget only accesses it over D-Bus, so `find_package(KWin)` made

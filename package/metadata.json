@@ -14,10 +14,6 @@
     "License": "GPL",
     "Id": "org.kde.plasma.virtualdesktopbar",
 
-    "ServiceTypes": [
-      "Plasma/Applet"
-    ],
-
     "Website": "https://github.com/lenonk/virtual-desktop-bar",
 
     "Dependencies": [
@@ -26,9 +22,7 @@
   },
 
   "KPackageStructure": "Plasma/Applet",
-  "X-Plasma-API": "declarativeappletscript",
   "X-Plasma-API-Minimum-Version": "6.0",
-  "X-Plasma-MainScript": "ui/main.qml",
 
   "X-Plasma-Provides": [
     "org.kde.plasma.virtualdesktops"
